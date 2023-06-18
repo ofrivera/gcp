@@ -16,4 +16,4 @@ artifacts:
 images:
   - us-central1-docker.pkg.dev/${PROJECT_ID}/${_ARTIFACT_REGISTRY_REPO}/python-app:${SHORT_SHA}
 substitutions:
-    _ARTIFACT_REGISTRY_REPO: 'infra-bear'
+    _ARTIFACT_REGISTRY_REPO: 'infra'
