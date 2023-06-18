@@ -7,14 +7,7 @@ steps:
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push',  'us-central1-docker.pkg.dev/${PROJECT_ID}/${_ARTIFACT_REGISTRY_REPO}/python-app:${SHORT_SHA}']
 # Save test logs to Google Cloud Storage
-artifacts:
-  objects:
-    location: gs://${_BUCKET_NAME}/
-    paths:
-      - ${SHORT_SHA}_test_log.xml
-# Store images in Google Artifact Registry 
 images:
   - us-central1-docker.pkg.dev/${PROJECT_ID}/${_ARTIFACT_REGISTRY_REPO}/python-app:${SHORT_SHA}
 substitutions:
     _ARTIFACT_REGISTRY_REPO: 'infra'
-    _BUCKET_NAME: 'devel-bad0_cloudbuild'
