@@ -1,0 +1,7 @@
+instances:
+  - project: "project-id"
+    zone: "us-central1"
+    name: "instance-name-1"
+  - project: "project-id"
+    zone: "us-central1"
+    name: "instance-name-2"
