@@ -4,10 +4,10 @@ This repository contains resources and projects related to various Google Cloud 
 
 ## Contents
 
-- [Cloud Architect Certification](cloud-architect-certification/README.md)
+- [Cloud Architect Certification](cloud-architect-certification/)
   - Preparation materials and study guides for the Google Cloud Professional Cloud Architect certification.
 
-- [DevOps Engineer Certification](cloud-devops-engineer-certification/README.md)
+- [DevOps Engineer Certification](cloud-devops-engineer-certification/)
   - Resources and practice exercises for the Google Cloud Professional DevOps Engineer certification.
 
 - [Cloud Deploy GKE Quickstart](clouddeploy-gke-quickstart/)
@@ -17,4 +17,4 @@ This repository contains resources and projects related to various Google Cloud 
   - Example project demonstrating how to build and deploy a Python application using Google Cloud Build.
 
 - [SRE Workshop](sre-workshop/)
-  - Materials for a Site Reliability Engineering (SRE) workshop, covering best practices and tools for maintaining reliable systems on GCP.
+  - The Service Level Calculator (SLC) is an interactive web application designed to help design SLIs, SLOs, SLAs and more.
