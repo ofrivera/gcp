@@ -18,3 +18,6 @@ This repository contains resources and projects related to various Google Cloud 
 
 - [SRE Workshop](sre-workshop/)
   - The Service Level Calculator (SLC) is an interactive web application designed to help design SLIs, SLOs, SLAs and more.
+
+- [CloudSQL Maintenance Helper](cloudsql-maintenance-helper/)
+  - A tool to automate and simplify CloudSQL maintenance and patches.
