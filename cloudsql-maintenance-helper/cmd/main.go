@@ -6,14 +6,12 @@ import (
 	"os"
 	"sync"
 
-	"io/ioutil"
+	"cloudsql-maintenance-helper/pkg/restart"
 	"path/filepath"
 
 	"google.golang.org/api/option"
-	"google.golang.org/api/sql/v1beta4"
+	sqladmin "google.golang.org/api/sqladmin/v1beta4"
 	"gopkg.in/yaml.v3"
-
-	"sql-patch-app/pkg/patch"
 
 	"github.com/joho/godotenv"
 )
@@ -34,7 +32,7 @@ func main() {
 
 	// Load instances from YAML file
 	configPath := filepath.Join("config", "instances.yaml")
-	configFile, err := ioutil.ReadFile(configPath)
+	configFile, err := os.ReadFile(configPath)
 	if err != nil {
 		log.Fatalf("Failed to read config file: %v", err)
 	}
@@ -44,9 +42,12 @@ func main() {
 		log.Fatalf("Failed to parse config file: %v", err)
 	}
 
+	// Log the instances to be restarted
+	log.Printf("Restarting the following instances: %v", instanceConfig.Instances)
+
 	// Initialize the Google SQL Admin API client
 	ctx := context.Background()
-	service, err := sql.NewService(ctx, option.WithCredentialsFile(os.Getenv("GOOGLE_APPLICATION_CREDENTIALS")))
+	service, err := sqladmin.NewService(ctx, option.WithCredentialsFile(os.Getenv("GOOGLE_APPLICATION_CREDENTIALS")))
 	if err != nil {
 		log.Fatalf("Error creating SQL service: %v", err)
 	}
@@ -57,7 +58,7 @@ func main() {
 		wg.Add(1)
 		go func(project, zone, name string) {
 			defer wg.Done()
-			err := patch.PatchInstance(ctx, service, project, name)
+			err := restart.InstancesRestart(ctx, service, project, name)
 			if err != nil {
 				log.Printf("Failed to patch instance %s: %v", name, err)
 			} else {

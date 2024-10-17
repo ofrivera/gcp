@@ -1,4 +1,4 @@
-module sql-patch-app
+module cloudsql-maintenance-helper
 
 go 1.21
 

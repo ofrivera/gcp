@@ -1,7 +1,7 @@
 instances:
-  - project: "project-id"
+  - project: "hip-wharf-438707-r4"
     zone: "us-central1"
-    name: "instance-name-1"
-  - project: "project-id"
+    name: "first"
+  - project: "hip-wharf-438707-r4"
     zone: "us-central1"
-    name: "instance-name-2"
+    name: "second"
