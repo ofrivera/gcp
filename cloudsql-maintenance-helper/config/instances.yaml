@@ -1,7 +1,0 @@
-instances:
-  - project: "hip-wharf-438707-r4"
-    zone: "us-central1"
-    name: "first"
-  - project: "hip-wharf-438707-r4"
-    zone: "us-central1"
-    name: "second"

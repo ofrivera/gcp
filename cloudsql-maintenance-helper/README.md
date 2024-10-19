@@ -7,7 +7,7 @@
 ## Setup
 
 1. **Configure Instances:**
-   Update `config/instances.yaml` with your instances' details.
+   Rename `config/instances.example.yaml` to `config/instances.yaml` and update with your instances' details.
    Structure
    ```bash
    instances:
