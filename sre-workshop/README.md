@@ -9,7 +9,6 @@ The Service Level Calculator (SLC) is an interactive web application designed to
 ## Screenshots
 <img src="https://github.com/ofrivera/gcp/raw/main/sre-workshop/images/image-1.png" alt="SL Calculator Screenshot 1" width="700"/>
 
-
 ## Key Features
 
 1. **SLI Configuration**: Define and customize Service Level Indicators.
