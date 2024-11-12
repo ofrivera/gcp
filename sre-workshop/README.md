@@ -7,7 +7,7 @@
 The Service Level Calculator (SLC) is an interactive web application designed to help engineering teams, product managers, and engineering leaders define and visualize Service Level Indicators (SLIs), Service Level Objectives (SLOs), and alerting strategies. This tool aims to simplify the process of setting up and understanding service reliability metrics.
 
 ## Screenshots
-<img src="https://github.com/ofrivera/gcp/raw/main/sre-workshop/images/image-1.png" alt="SL Calculator Screenshot 1" width="700"/>
+<img src="https://github.com/ofrivera/gcp/raw/main/sre-workshop/images/image-2.png" alt="SL Calculator Screenshot 1" width="700"/>
 
 ## Key Features
 
