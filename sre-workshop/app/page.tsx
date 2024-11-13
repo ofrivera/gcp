@@ -82,14 +82,6 @@ return (
       <span className="ml-2">%</span>
     </div>
 
-    {/* Error Budget Display */}
-    <div className="flex items-center mb-2">
-      <label className="mr-2 w-32">Error Budget:</label>
-      <span className="px-2 py-1 w-20 bg-gray-700">
-        {slo !== '' ? (100 - Number(slo)).toFixed(3).replace(/\.?0+$/, '') : '0.2'}%
-      </span>
-    </div>
-
     {/* Buffer Margin Input */}
     <div className="flex items-center mb-2">
       <label htmlFor="bufferMargin" className="mr-2 w-32">Buffer Margin:</label>
@@ -124,6 +116,15 @@ return (
         value={typeof sla === 'number' ? sla.toString().replace(/\.?0+$/, '') : sla}
         readOnly
       />
+      <span className="ml-2">%</span>
+    </div>
+
+    {/* Error Budget Display */}
+    <div className="flex items-center mb-2">
+      <label className="mr-2 w-32">Error Budget:</label>
+      <span className="px-2 py-1 w-20 bg-gray-700">
+        {slo !== '' ? (100 - Number(slo)).toFixed(3).replace(/\.?0+$/, '') : '0.2'}
+      </span>
       <span className="ml-2">%</span>
     </div>
 

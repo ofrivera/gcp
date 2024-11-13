@@ -5,15 +5,15 @@ This repository contains resources and projects related to various Google Cloud 
 ## Contents
 
 - [SRE Workshop](sre-workshop/)
-  - The Service Level Calculator (SLC) is an interactive web application designed to help design SLIs, SLOs, SLAs and more.
+  - The Service Level Calculator (SLC) is an interactive web application designed to help design SLIs, SLOs, SLAs and Error Budgets.
 
-- [Kubernetes Checker](k8s-checker/)
+- [Kubernetes Pod Stats](kubernetes-pod-stats/)
   - A Go script to check the status of pods and nodes in a Kubernetes cluster. Generates a report with pod counts by status (Running/Pending/Failed), total pods per status, and pod distribution across nodes.
 
 - [CloudSQL Maintenance Helper](cloudsql-maintenance-helper/)
-  - A tool to restart a list of CloudSQL instances during maintenances.
+  - A tool to restart/patch a list of CloudSQL instances during maintenances.
 
-- [GCP Instance Command Executor](gcloud-node-cmd/)
+- [GCP Compute Remote Executor](gcp-compute-remote-executor/)
   - A Go script to execute a command on multiple Google Cloud Platform (GCP) instances filtered by project and labels.
 
 - [Cloud Architect Certification](cloud-architect-certification/)
